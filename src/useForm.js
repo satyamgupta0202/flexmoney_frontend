@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const useForm = (submitForm, validate) => {
   const [values, setValues] = useState({
@@ -10,7 +10,7 @@ const useForm = (submitForm, validate) => {
 
   const [errors, setError] = useState({});
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
